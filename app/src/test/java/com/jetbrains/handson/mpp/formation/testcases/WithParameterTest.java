@@ -1,4 +1,4 @@
-package com.jetbrains.handson.mpp.formation;
+package com.jetbrains.handson.mpp.formation.testcases;
 
 import com.jetbrains.handson.mpp.formation.service.CalculatriceService;
 

@@ -1,5 +1,6 @@
-package com.jetbrains.handson.mpp.formation;
+package com.jetbrains.handson.mpp.formation.testcases;
 
+import com.jetbrains.handson.mpp.formation.MyException;
 import com.jetbrains.handson.mpp.formation.service.CalculatriceService;
 
 import org.junit.After;
@@ -33,7 +34,7 @@ public class ThrownTest {
 
     @Test
     public void testThrowMyException() throws MyException {
-        //thrown.expect(MyException.class);
+       // thrown.expect(MyException.class);
         thrown.expectMessage("Mon message");
 
         calculatriceService.ThrowException("Mon message");

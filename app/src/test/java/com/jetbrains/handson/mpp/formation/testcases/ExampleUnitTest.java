@@ -1,5 +1,6 @@
-package com.jetbrains.handson.mpp.formation;
+package com.jetbrains.handson.mpp.formation.testcases;
 
+import com.jetbrains.handson.mpp.formation.MyException;
 import com.jetbrains.handson.mpp.formation.service.CalculatriceService;
 
 import org.junit.After;
@@ -46,9 +47,15 @@ public class ExampleUnitTest {
         calculatriceService.divisionTwoNumbers(5, 0);
         //calculatriceService.divisionTwoNumbers(0, 5);
 
-        //assertEquals(13, 13);
-        //fail("Pas encore mis en oeuvre!!");
     }
+
+    /*
+    @Test(expected = MyException.class)
+    public void testThrowException() throws MyException {
+        calculatriceService.ThrowException("Mon New message");
+    }
+    */
+
 
     @Ignore("Test is ignored as a demonstration")
     @Test
