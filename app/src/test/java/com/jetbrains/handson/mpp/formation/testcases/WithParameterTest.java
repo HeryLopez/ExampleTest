@@ -17,7 +17,7 @@ public class WithParameterTest {
     @Parameterized.Parameters(name = "{index}: additionsDeuxEntier({0}, {1}) = {2}")
     public static Iterable<Object[]> data() {
         return Arrays.asList(new Object[][] {
-                { 0, 0, 0}, { 1, 1, 2}, { 2, 1, 3 }, { 3, 2, 5 }, { 4, 3, 7 }, { 5, 5, 10 }, { 6, 8, 14 }
+                { 0, 0, 0}, { 1, 1, 42}, { 2, 1, 3 }, { 3, 2, 5 }, { 4, 3, 7 }, { 5, 5, 10 }, { 6, 8, 14 }
         });
     }
 
