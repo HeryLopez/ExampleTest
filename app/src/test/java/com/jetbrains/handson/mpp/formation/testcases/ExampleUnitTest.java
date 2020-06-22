@@ -44,8 +44,8 @@ public class ExampleUnitTest {
 
     @Test(expected = ArithmeticException.class)
     public void testDevisionParZero(){
-        calculatriceService.divisionTwoNumbers(5, 0);
-        //calculatriceService.divisionTwoNumbers(0, 5);
+        //calculatriceService.divisionTwoNumbers(5, 0);
+        calculatriceService.divisionTwoNumbers(0, 5);
 
     }
 
