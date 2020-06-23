@@ -21,6 +21,16 @@ android {
         }
     }
 
+    testOptions {
+        unitTests.all {
+            useJUnit {
+                //includeCategories 'com.jetbrains.handson.mpp.formation.categories.SlowTests'
+                //includeCategories 'com.jetbrains.handson.mpp.formation.categories.FastTests'
+            }
+        }
+    }
+
+
 }
 
 dependencies {

@@ -1,16 +1,20 @@
 package com.jetbrains.handson.mpp.formation.mockito;
 
+import com.jetbrains.handson.mpp.formation.categories.FastTests;
+import com.jetbrains.handson.mpp.formation.categories.SlowTests;
 import com.jetbrains.handson.mpp.formation.dao.CompteBancaireDAO;
 import com.jetbrains.handson.mpp.formation.domaine.CompteBancaire;
 import com.jetbrains.handson.mpp.formation.service.CompteBancaireService;
 
 import org.junit.Test;
+import org.junit.experimental.categories.Category;
 import org.mockito.Mockito;
 
 import static org.hamcrest.CoreMatchers.equalTo;
 import static org.hamcrest.CoreMatchers.is;
 import static org.hamcrest.MatcherAssert.assertThat;
 
+@Category({FastTests.class})
 public class MockitoTest {
 
     @Test

@@ -45,7 +45,7 @@ public class ThrownTest {
         List<Object> list = new ArrayList<Object>();
 
         thrown.expect(IndexOutOfBoundsException.class);
-        thrown.expectMessage("Index: 0, Size: 0");
+        //thrown.expectMessage("Index: 0, Size: 0");
         list.get(0); // execution will never get past this line
     }
 
