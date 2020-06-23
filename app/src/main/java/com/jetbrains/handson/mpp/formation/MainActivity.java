@@ -8,6 +8,7 @@ import android.view.View;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 
+import com.jetbrains.handson.mpp.formation.dao.CompteBancaireDAO;
 import com.jetbrains.handson.mpp.formation.service.CompteBancaireService;
 
 public class MainActivity extends AppCompatActivity {
@@ -17,7 +18,9 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        CompteBancaireService service = new CompteBancaireService();
+
+        CompteBancaireDAO dao = new CompteBancaireDAO();
+        CompteBancaireService service = new CompteBancaireService(dao);
         showMessage(service);
         service.virement(1, 2, 100);
         showMessage(service);

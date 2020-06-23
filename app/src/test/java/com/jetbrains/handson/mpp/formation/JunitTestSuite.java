@@ -8,7 +8,7 @@ import com.jetbrains.handson.mpp.formation.testcases.WithParameterTest;
 
 import org.junit.runner.RunWith;
 import org.junit.runners.Suite;
-
+/*
 @RunWith(Suite.class)
 
 @Suite.SuiteClasses({
@@ -18,5 +18,5 @@ import org.junit.runners.Suite;
         TimeoutTest.class,
         WithParameterTest.class
 })
-
+*/
 public class JunitTestSuite {}
