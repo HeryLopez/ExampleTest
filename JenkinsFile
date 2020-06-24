@@ -10,11 +10,18 @@ pipeline {
             steps {
                 echo 'Testing..'
             }
+             post {
+                success {
+                    junit '**/build/test-results/testDebugUnitTest/*'
+                }
+             }
         }
         stage('Deploy') {
             steps {
                 echo 'Deploying....'
             }
         }
+
+
     }
 }
