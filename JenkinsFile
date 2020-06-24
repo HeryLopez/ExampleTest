@@ -9,10 +9,12 @@ pipeline {
         stage('Test') {
             steps {
                 echo 'Testing..'
+                sh './gradlew clean'
+                sh './gradlew test'
             }
              post {
                 success {
-                    junit '**/build/test-results/testDebugUnitTest/*'
+                    junit 'app/build/test-results/testDebugUnitTest/*'
                 }
              }
         }
